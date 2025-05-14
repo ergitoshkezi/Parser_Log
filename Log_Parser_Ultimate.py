@@ -143,7 +143,7 @@ def find_matching_sublists(file_, e, diff_rows):
 
 
 def compareGPT(log, api_key):
-    api_url = "https://api.siemens.com/llm/v1/chat/completions"
+    api_url = "api url llm"
     llm = LLMApiRunnable(api_url=api_url, api_key=api_key)
     question = "Please Analyze the piece of Logs steps I provided in detail.\n\n"
 
@@ -545,7 +545,7 @@ def read_lines_list_XML(filename):
 
 
 def Resume_GPT(log, api_key):
-    api_url = "https://api.siemens.com/llm/v1/chat/completions"
+    api_url = "api url llm"
     llm = LLMApiRunnable(api_url=api_url, api_key=api_key)
     question = "Please Order this Result analysis list of each chunk of Transaction Log." 
 
@@ -559,7 +559,7 @@ def Resume_GPT(log, api_key):
 
 
 def SiemensGPT(log, question, api_key):
-    api_url = "https://api.siemens.com/llm/v1/chat/completions"
+    api_url = "api_url_llm"
     llm = LLMApiRunnable(api_url=api_url, api_key=api_key)
     Response = []
     chunks=split_text_no_overlap(log)
@@ -3496,7 +3496,7 @@ class LogTreeView(tk.Tk):
 
 
 CONFIG_FILE = "config.json"
-DEFAULT_API_KEY = "SIAK-BeyTwIHY1MHSMn3aEA47QbRyj8f3f096c"
+DEFAULT_API_KEY = "Token"
 
 def load_config():
     """Load stored config if it exists, otherwise return an empty dict."""
